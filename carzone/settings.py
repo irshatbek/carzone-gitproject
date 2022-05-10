@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'multiselectfield',
     'django.contrib.humanize',
+    'paginator',
 ]
 
 MIDDLEWARE = [
