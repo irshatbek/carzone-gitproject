@@ -217,7 +217,7 @@
                             <div class="facilities-list clearfix">
                                 <ul>
                                     <li>
-                                        <span><i class="flaticon-way"></i></span>{{car.milage}} km
+                                        <span><i class="flaticon-way"></i></span>{{car.miles | intcomma}} km
                                     </li>
                                     <li>
                                         <span><i class="flaticon-calendar-1"></i></span>{{car.year}}
@@ -276,7 +276,7 @@
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">{{car.price | intcomma}}</p>
+                            <p class="price">$ {{car.price | intcomma}}</p>
                         </div>
                     </div>
                 </div>
@@ -342,8 +342,6 @@
     </div>
 </div>
 <!-- Intro section end -->
-
-
 
 
 
