@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-5&g!x=36thki=z2ait6p#k*6s2%4q9)n1((0z=bhmare%j4wmq
 DEBUG = True
 
 ALLOWED_HOSTS = []
+LOGIN_REDIRECT_URL ='dashboard' 
 
 
 # Application definition
@@ -45,6 +46,14 @@ INSTALLED_APPS = [
     'multiselectfield',
     'django.contrib.humanize',
     'paginator',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    # Providers
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +149,5 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SITE_ID = 1
