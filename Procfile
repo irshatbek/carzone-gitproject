@@ -1,2 +1,2 @@
 release: python manage.py migrate
-wed: gunicorn carzone.wsgi
+web: gunicorn carzone.wsgi
